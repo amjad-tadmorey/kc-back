@@ -6,6 +6,7 @@
   "scripts": {
     "start:dev": "node --watch ./server.js",
     "start:prod": "powershell -Command \"$env:NODE_ENV='production'; node --watch ./server.js\"",
+    
     "start": "node server.js"
   },
   "author": "amjad-ghassan",
