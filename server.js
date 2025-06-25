@@ -11,15 +11,15 @@ dotenv.config({ path: './.env' });
 const app = require('./app');
 const { default: mongoose } = require('mongoose');
 
-const DB = "mongodb://amjadtadmory:<db_password>@ac-eu1ptum-shard-00-00.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-01.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-02.u9cao07.mongodb.net:27017/?ssl=true&replicaSet=atlas-10srv4-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
-    .replace('<db_password>', 'YImFBhDjluvbjI8E')
-mongoose.connect(DB, {
-    // useNewUrlParser: true,
-    // useCreateIndex: true,
+// const DB = "mongodb://amjadtadmory:<db_password>@ac-eu1ptum-shard-00-00.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-01.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-02.u9cao07.mongodb.net:27017/?ssl=true&replicaSet=atlas-10srv4-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
+//     .replace('<db_password>', 'YImFBhDjluvbjI8E')
+// mongoose.connect(DB, {
+//     // useNewUrlParser: true,
+//     // useCreateIndex: true,
 
-    // useFindAndModify: false,
-    // useUnifiedTopology: true
-}).then(() => console.log('DB connection successful!'))
+//     // useFindAndModify: false,
+//     // useUnifiedTopology: true
+// }).then(() => console.log('DB connection successful!'))
 
 
 const port = 8080

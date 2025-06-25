@@ -33,16 +33,16 @@ const app = express()
 // });
 // app.use('/api', limiter);
 
-app.use(express.json({ limit: '10kb' }));
-app.use(express.urlencoded({ extended: true, limit: '10kb' }));
-app.use(cookieParser());
-app.use(compression());
+// app.use(express.json({ limit: '10kb' }));
+// app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+// app.use(cookieParser());
+// app.use(compression());
 
 
-app.use('/api/v1/users', userRouter)
-app.use('/api/v1/orders', protect, orderRouter)
-app.use('/api/v1/products', protect, productRouter)
+// app.use('/api/v1/users', userRouter)
+// app.use('/api/v1/orders', protect, orderRouter)
+// app.use('/api/v1/products', protect, productRouter)
 
-app.use(globalErrorHandler)
+// app.use(globalErrorHandler)
 
 module.exports = app
