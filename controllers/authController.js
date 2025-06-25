@@ -6,8 +6,8 @@ const AppError = require('../utils/appError')
 const factory = require('./handlerFactory');
 
 const signToken = id => {
-    return jwt.sign({ id }, process.env.JWT_SECRET, {
-        expiresIn: process.env.JWT_EXPIRES_IN
+    return jwt.sign({ id }, 'a9f3dcb28g4c1d5a93e8b6c1q2f7a1e4', {
+        expiresIn: '90d'
     })
 }
 
