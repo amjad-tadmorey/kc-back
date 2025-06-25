@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(cors({
-    origin: process.env.ORIGIN
+    origin: 'http://localhost:5173'
 }));
 
 app.use(helmet());
