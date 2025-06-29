@@ -1,5 +1,5 @@
 const express = require("express");
-const { getAllProducts, createProduct, getProduct } = require("../controllers/productController");
+const { getAllProducts, createProduct, getProduct, updateProduct } = require("../controllers/productController");
 
 const router = express.Router()
 
@@ -10,5 +10,6 @@ router
 router
     .route('/:id')
     .get(getProduct)
+    .post(updateProduct)
 
 module.exports = router;

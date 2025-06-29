@@ -1,5 +1,5 @@
 const express = require("express");
-const { getAllOrders, getOrder, createOrder } = require("../controllers/orderController");
+const { getAllOrders, getOrder, createOrder, updateOrder } = require("../controllers/orderController");
 
 const router = express.Router()
 
@@ -10,5 +10,6 @@ router
 router
     .route('/:id')
     .get(getOrder)
+    .post(updateOrder)
 
 module.exports = router;
